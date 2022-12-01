@@ -1,18 +1,20 @@
 
  body::before {
   content: '';
+  display: block;
   width:100%;
-  height:30%;
+  height:200px;
   position:absolute;
   top: 0;
   left: 0;
   color:red; 
-  z-index: 01;
+  z-index: -1;
 } 
 
 body {
   font-family:'Raleway', sans-serif;
   background:#EBEBEB;
+  display: flex;
   
 
 }
@@ -39,7 +41,10 @@ header h4{
 }
 
 form {
-  background: white;
+  border-radius: 8px;
   
+
+  background: white;
+  min-height: 300px;
 
 }
