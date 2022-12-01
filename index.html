@@ -15,35 +15,35 @@
 
     </head>
     <body>
-       <div class="page">  
+        <div class="page">  
         <header>
             <img src="img/logo.png" class="img-thumbnail">
             <h1>Nome do Produto</h1>
+        </header>
 
-          </header>
           <form class="myform">
             <fieldset>
               <div class="fieldset-wrapper">
                 <legend>Seus dados para receber contato</legend>
     
                 <div class="inline">
-                  <div class="input-wrapper">
-                    <label for="name">Nome completo</label>
+                    <div class="input-wrapper">
+                        <label for="name">Nome completo</label>
                         <input type="text" id="name" required minlength="3" />
                   </div>
                   <div class="input-wrapper">
-                    <label for="email"
-                      >Email <span>(digite um e-mail válido)</span></label
-                    >
+                    <label for="email">
+                        Email <span>(digite um e-mail válido)</span>
+                        </label>
                     <input type="email" id="email" required />
                   </div>
-                  <div class="another">
-                    <div class="date">
+
+                <div class="input-wrapper">
                       <label for="birth-date">
                         Data de nascimento <span>(DD/MM/AAAA)</span>
                         </label>
                       <input type="date" id="birth-date" required />
-                    </div>
+                </div>
             
               </div>
             </fieldset>
@@ -55,11 +55,11 @@
                  
                     <select class="form-control" name="region">
                         <option value="">Selecione a sua região</option>
-                        <option>Sul</option>
-                        <option>Sudeste</option>
                         <option>Centro-Oeste</option>
                         <option>Nordeste</option>
                         <option>Norte</option>
+                        <option>Sudeste</option>
+                        <option>Sul</option>
                     </select>
                     
                 </div>
@@ -76,6 +76,7 @@
               </div>
             </fieldset>
           </form>
+          
           <footer>
             <input class="button" type="submit" form="myform" value="Enviar" />
           </footer>
@@ -84,8 +85,6 @@
         </div>
     
                   
-        </div>
-        </div> 
         <!-- <script>
                 $(function () {
                     $('.next-step').click(function (event) {
