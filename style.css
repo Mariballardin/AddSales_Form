@@ -31,13 +31,13 @@ html {
   width: 70rem;
   margin: auto;
 }
-
+/* 
 img {
 
   position: fixed;
   margin: 4rem 4rem 1rem;
 
-}
+} */
 
 
 header h1{
@@ -67,13 +67,16 @@ body::before {
 }
 
 header {
-  
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+   
   margin-top: 4rem;
-  width: 41.7rem;
-  margin-bottom: 3rem; 
-}
 
-header h1 {
+  margin-bottom: 3rem; 
+} */
+
+header {
   font-weight: normal;
   font-size: 3.0rem;
   line-height: 5rem;
@@ -184,9 +187,6 @@ select option {
 option[value=""][disabled] {
   display: none;
 }
-/* input.from + input.to  {
-  margin-left: 10px;
-} */
 
 footer {
   height: 13.6rem;
@@ -222,10 +222,3 @@ footer .button:hover {
 }
 
 
-.container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
