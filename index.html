@@ -4,9 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
         <title>Compre Já</title>
         
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -15,9 +12,12 @@
 
     </head>
     <body>
+        <div class="card">
+            <img src="img/logo.png" class="img-thumbnail">
+        </div>
+
         <div class="page">  
         <header>
-            <img src="img/logo.png" class="img-thumbnail">
             <h1>Nome do Produto</h1>
         </header>
 
@@ -25,8 +25,7 @@
             <fieldset>
               <div class="fieldset-wrapper">
                 <legend>Seus dados para receber contato</legend>
-    
-                <div class="inline">
+                    
                     <div class="input-wrapper">
                         <label for="name">Nome completo</label>
                         <input type="text" id="name" required minlength="3" />
@@ -76,7 +75,7 @@
               </div>
             </fieldset>
           </form>
-          
+
           <footer>
             <input class="button" type="submit" form="myform" value="Enviar" />
           </footer>
