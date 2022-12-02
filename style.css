@@ -8,9 +8,11 @@
   --color-header:hsl(202, 62%, 63%);
   --color-legend:hsl(200, 49%, 38%);
   --color-body: hwb(0 100% 0%); 
-  --color-form:hsla(202, 65%, 91%, 0.461);
+  --color-form:hsl(202, 65%, 91%);
   --color-label: hsl(260, 9%, 32%);
+ 
   --color-buttom: hsl(348, 100%, 66%);
+  --color-buttom2: hsl(348, 93%, 58%);
   --input-border: hsl(240, 25%, 92%);
   --background-input: hsl(240, 25%, 98%);
 
@@ -76,17 +78,20 @@ header h1 {
   font-size: 3.0rem;
   line-height: 5rem;
   margin-bottom: 1.8rem;
-  color:#03446A;
+  color:white;
 }
 
 
 form {
-  background-color: pink;
+  background-color: var(--color-form);
   display: flex;
   flex-direction: column;
   gap: 3rem;
   border-radius: 8px 8px 0 0;
   padding: 6.4rem;
+  border-radius: 8px;
+  min-height: 300px;
+
 }
 /*
 .border {
@@ -99,15 +104,11 @@ fieldset {
   margin-bottom: 3rem;
 }
 
-h4,
-fieldset legend {
-  color: #535971;
-}
 
 legend {
   padding-bottom: 1.8rem;
   font-size: 2.4rem;
-  border-bottom: 1px solid #e6e6f0;
+  border-bottom: 1px solid var(--color-legend);
   margin-bottom: 3.6rem;
 }
 
@@ -122,11 +123,6 @@ input {
   gap: 1rem;
 }
 
-.fieldset-wrapper .inline {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
- } */
 
 .input-wrapper {
   display: flex;
@@ -134,32 +130,9 @@ input {
   width: 100%;
 }
 
-.inline {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.another {
-  display: grid;
-
-  grid-template-areas: 'A A B C';
-}
-.input-wrapper .date {
-  grid-area: A A;
-  margin-right: 3.2rem;
-}
-.input-wrapper .from {
-  grid-area: B;
-}
-
-.input-wrapper .to {
-  grid-area: C;
-  margin-left: 10px;
-}
 
 .input-wrapper label {
-  font-family: var(--font-two);
+  font-family: var(--font-one);
   color: var(--color-label);
   font-size: 1.4rem;
   line-height: 2.4rem;
@@ -170,9 +143,9 @@ input {
   color: #c1bccc;
   font-size: 1.2rem;
   line-height: 2rem;
-  font-family: var(--font-two);
+  font-family: var(--font-one);
 }
-.input-wrapper option,
+.input-wrapper select,
 .input-wrapper input,
 .input-wrapper textarea {
   background: var(--background-input);
@@ -188,9 +161,29 @@ input {
 
   color: var(--color-big-text);
 
-  font-family: var(--font-two);
+  font-family: var(--font-one);
 }
 
+select {
+
+  transition: color 0s 2147483647s;
+}
+
+select:hover,
+select:focus,
+select:active,
+select:focus {
+  color: var(--color-legend);
+  transition:0s;
+}
+
+select option {
+  color: #333;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
 /* input.from + input.to  {
   margin-left: 10px;
 } */
@@ -216,48 +209,18 @@ footer .button {
   border-radius: 8px;
   border: none;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  font-weight: 700;
   line-height: 2.6rem;
   font-family: var(--font-one);
   text-transform: uppercase;
 }
 
 footer .button:hover {
-  opacity: 0.9;
+  background: var(--color-buttom2);
   cursor: pointer;
 }
 
-
-
-
-h3 {
-  font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 4.2rem;
-  color:#1D2124;
-}
-
-
-header{
-  width: 319px;
-}
-
-header h4{
-  font-family:'Raleway', sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 42px;
-  margin: 0 auto;
-
-}
-
-form {
-  border-radius: 8px;
-
-  background: white;
-  min-height: 300px;
-
-}
 
 .container-fluid {
   width: 100%;
