@@ -209,3 +209,7 @@ footer .button:hover {
   text-transform: uppercase;
   
 }
+
+input:invalid {
+  border: 1px solid #FF1010; 
+}
