@@ -25,7 +25,7 @@ html {
 }
 
 .page {
-  max-width: 44.5rem;
+  max-width: 64.5rem; 
   margin: 0 auto;
 }
 
@@ -37,10 +37,12 @@ header h1 {
 }
 
 header {
+  max-width: 64.5rem; 
+  margin: 0 auto;
   display: flex;
   justify-content:space-between;
   align-items:center;
-  padding: 4rem 4rem 2rem 4rem;
+  padding: 5rem 6rem 2rem 6rem;
  
 } 
 
@@ -73,7 +75,7 @@ body::before {
 
 
 form {
-  max-width: 73.5rem; 
+  max-width: 79.5rem; 
   background-color:var(--color-form);
   display: flex;
   flex-direction: column;
@@ -91,13 +93,15 @@ fieldset {
 
 legend {
   padding-bottom: 1.8rem;
+  color: #4F4A59;
+  font-weight: 600;
   font-size: 1.6rem;
   border-bottom: 0.4px solid var(--color-legend);
   margin-bottom: 2.0rem;
 }
 
 input {
-  width: 90%;
+  width: 100%;
 }
 
 
@@ -214,28 +218,58 @@ input:invalid {
   border: 1px solid #FF1010; 
 }
 
-@media (min-width: 700px) {
+/* @media (min-width: 700px) {
 
 
 
-  .page{
+   .page{
     width: 100%;
     display: flex;
     gap: 2.5rem;
-  }
-  main{
+  } 
+   main{
     width: 100%;
   }
-  header{
-    width: 100%;
+  header{ 
+    /* width: 100%;
     margin: 0 auto;
-  }
+  } 
 
-  .publi {
+   .publi {
     margin-top: 30.5rem;
-  }
+  } 
 
-  form {
+   form {
     min-width: 83.5rem; 
   }
+} 
+
+form {
+  width: 103.5rem; 
+  background-color:var(--color-form);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 6.4rem;
+  border-radius: 8px 8px 0 0;
+  min-height: 300px;
 }
+.page {
+   border: 5px solid red; 
+   max-width: 44.5rem; 
+   margin: 0 auto;
+}
+footer {
+
+  height: 14.6rem;
+  width: 73.5rem; 
+
+  background: var(--color-header);
+
+  border-top: 1px solid #d6d6d6;
+  border-radius: 0 0 8px 8px;
+}
+main {
+   border: 5px solid pink; 
+  max-width: 200rem;
+} */
