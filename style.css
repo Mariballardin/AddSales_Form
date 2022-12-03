@@ -6,11 +6,13 @@
 
 :root {
   --color-header:hsl(202, 62%, 63%);
-  --color-legend:hsl(200, 49%, 38%);
+  --color-legend: hsl(260, 9%, 32%);
+  --color-legend2:hsla(264, 4%, 50%, 0.256));
   --color-body: hwb(0 100% 0%); 
   --color-form:hsl(202, 65%, 91%);
-  --color-label: hsl(260, 9%, 32%);
- 
+  /* --color-label: hsl(260, 9%, 32%); */
+  --color-span:hsl(203, 73%, 24%);
+  --color-label: hsl(203, 93%, 22%);
   --color-buttom: hsl(348, 100%, 66%);
   --color-buttom2: hsl(348, 93%, 58%);
   --input-border: hsl(240, 25%, 92%);
@@ -31,6 +33,8 @@ html {
 
 
 header h1 {
+
+  font-size: 2.9rem;
   color: var(--color-body);
   font-family: var(--font-one);
  
@@ -46,9 +50,6 @@ header {
  
 } 
 
-header h1 {
-  font-size: 2.5rem;
-}
 
 
 body {
@@ -89,9 +90,9 @@ fieldset {
 
 legend {
   padding-bottom: 1.8rem;
-  color: #4F4A59;
+  color: var(--color-legend);
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 2.1rem;
   border-bottom: 0.4px solid var(--color-legend);
   margin-bottom: 2.0rem;
 }
@@ -117,15 +118,16 @@ input {
 
 .input-wrapper label {
   font-family: var(--font-one);
-  color: var(--color-label);
-  font-size: 1.4rem;
+  font-weight:600;
+  color: var(--color-legend);
+  font-size: 1.6rem;
   line-height: 2.4rem;
   margin-bottom: 0.8rem;
 }
 
 .input-wrapper span {
-  color: #c1bccc;
-  font-size: 1.2rem;
+  color: var(--color-legend2) ;
+  font-size: 0.8rem;
   line-height: 2rem;
   font-family: var(--font-one);
 }
@@ -142,8 +144,8 @@ input {
 
   font-size: 14px;
   line-height: 26px;
-
-  color: var(--color-big-text);
+ 
+  color: var(--color-label);
 
   font-family: var(--font-one);
 }
@@ -229,15 +231,15 @@ legend {
 
 .input-wrapper label {
   font-family: var(--font-one);
-  color: var(--color-label);
-  font-size: 1.7rem;
+  color: var(--color-legend);
+  font-size: 1.8rem;
   line-height: 2.5rem;
   margin-bottom: 0.8rem;
 }
 
 .input-wrapper span {
-  color: #c1bccc;
-  font-size: 1.3rem;
+  color: var(--color-legend2);
+  font-size: 1.rem;
   
 }
 .input-wrapper select,
