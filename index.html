@@ -23,21 +23,21 @@
         <main>   
           <div class="page">
           <div class="column1">
-                <form class="myform">
+                <form class="myform" id="form">
                   <fieldset>
                     <div class="fieldset-wrapper">
                       <legend>Seus dados para receber contato</legend>
                       
                       <div class="input-wrapper">
                           <label for="name">Nome completo</label>
-                          <input type="text" class="inputs" id="name"  required minlength="3" />
+                          <input type="text" class="inputs required" id="name"  required minlength="3" oninput="nameValidate()" />
                           <span class="span-required">Nome deve ter, no mínimo, 3 caracteres.</span>
                     </div>
                     <div class="input-wrapper">
                       <label for="email">
                           Seu melhor e-mail 
                           </label>
-                      <input type="email" placeholder = "Digite um e-mail válido" class="inputs" id="email" required />
+                      <input type="email" placeholder = "Digite um e-mail válido" class="inputs required" id="email" required />
                       
                       <span class="span-required">E-mail inválido</span>
                     </div>
