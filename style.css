@@ -7,7 +7,7 @@
 :root {
   --color-header:hsl(202, 62%, 63%);
   --color-legend: hsl(260, 9%, 32%);
-  --color-legend2:hsla(264, 4%, 50%, 0.256));
+  --color-legend2:hsla(264, 4%, 50%, 0.256);
   --color-body: hwb(0 100% 0%); 
   --color-form:hsl(202, 65%, 91%);
 
@@ -49,7 +49,6 @@ header {
   padding: 5rem 6rem 2rem 6rem;
  
 } 
-
 
 
 body {
@@ -131,6 +130,15 @@ input {
   line-height: 2rem;
   font-family: var(--font-one);
 }
+
+.input-wrapper .span-required {
+  color: var(--color-span);
+  font-size: 1.rem;
+  display: none;
+  margin: .3rem 0 0 1.2rem;
+
+}
+
 .input-wrapper select,
 .input-wrapper input,
 .input-wrapper textarea {
@@ -167,11 +175,11 @@ select:focus {
 }
 
 select option {
-  color: #333;
-}
+  color: var(--color-legend);
 
-option[value=""][disabled] {
-  display: none;
+/* option[value=""][disabled] 
+  display: none; */
+
 }
 
 footer {
@@ -221,13 +229,7 @@ footer .button:hover {
 }  */
 
 
-.span-required{
-  color: #FF1010;
-  font-size: 0.8rem;
-  display: none;
-  margin: .3rem 0 0 1.2rem;
 
-}
  @media (min-width: 700px) {
 
 header h1 {
@@ -254,6 +256,13 @@ legend {
   font-size: 1.rem;
   
 }
+.input-wrapper .span-required {
+  color: var(--color-span);
+  font-size: 1.2rem;
+  display: none;
+  margin: .3rem 0 0 1.2rem;
+
+}
 .input-wrapper select,
 .input-wrapper input,
 .input-wrapper textarea {
@@ -273,6 +282,8 @@ footer .button {
   
   
 }
+
+
   /* .page{
     width: 100%;
     display: flex;
@@ -323,4 +334,5 @@ footer {
 main {
    border: 5px solid pink; 
   max-width: 200rem;
-} */
+} 
+*/
