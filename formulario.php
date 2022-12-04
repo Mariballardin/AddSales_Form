@@ -1,3 +1,12 @@
+<?php
+
+if(isset($_POST[`submit`]))
+{
+  print_r($_POST['name'])
+
+}
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
