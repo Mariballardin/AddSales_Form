@@ -132,7 +132,7 @@ input {
 }
 
 .input-wrapper .span-required {
-  color: var(--color-span);
+  color:  #FF1010;
   font-size: 1.rem;
   display: none;
   margin: .3rem 0 0 1.2rem;
@@ -257,7 +257,7 @@ legend {
   
 }
 .input-wrapper .span-required {
-  color: var(--color-span);
+  color:  #FF1010;
   font-size: 1.2rem;
   display: none;
   margin: .3rem 0 0 1.2rem;
