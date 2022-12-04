@@ -1,11 +1,11 @@
-<?php
+<!-- <?php
 
 if(isset($_POST[`submit`]))
 {
   print_r($_POST['name'])
 
 }
-
+?> -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -32,7 +32,7 @@ if(isset($_POST[`submit`]))
         <main>   
           <div class="page">
           <div class="column1">
-                <form action="formulario.php" method="post" class="form" id="form">
+                <form class="form" id="form">
                   <fieldset>
                     <div class="fieldset-wrapper" >
                       <legend>Seus dados para receber contato</legend>
@@ -125,9 +125,9 @@ if(isset($_POST[`submit`]))
 
       });
 
-      // form.addEventListener('submit', (event) => {
-      //   console.log('alo')
-      // });
+      form.addEventListener('submit', (event) => {
+       console.log('alo')
+       });
 
 
       function setError(index)
