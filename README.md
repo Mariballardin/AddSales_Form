@@ -7,8 +7,9 @@ On this page, you will find a simple form that you can fill out to receive updat
 To get started, simply enter your name, email address and your brazilian region in the form fields provided. 
 Once you have entered this information, click the "Enviar" button to submit your request.
 
-[logo](https://user-images.githubusercontent.com/96913788/205657716-fea947ab-e8f9-4432-a15a-c84260c271cf.png)
+
 Available for both mobile and desktop.
+<img width="380" alt="Captura de Tela 2022-12-05 às 14 19 34" src="https://user-images.githubusercontent.com/96913788/205659468-f7c199d5-0c79-403d-a6c5-d4d77172fbea.png">
 
 
 We will then add you to our mailing list and send you updates about our product as they become available. 
